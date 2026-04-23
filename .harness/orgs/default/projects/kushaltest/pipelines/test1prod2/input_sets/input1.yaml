@@ -1,0 +1,19 @@
+inputSet:
+  name: input1
+  identifier: input1
+  orgIdentifier: default
+  projectIdentifier: kushaltest
+  pipeline:
+    identifier: test1prod2
+    stages:
+      - stage:
+          identifier: stage1
+          type: Custom
+          spec:
+            execution:
+              steps:
+                - step:
+                    identifier: Wait_1
+                    type: Wait
+                    spec:
+                      duration: 20s
